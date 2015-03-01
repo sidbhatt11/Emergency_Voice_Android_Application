@@ -1,0 +1,262 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.siddharthbhatt.voice_recog.Settings"
+
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear1"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Local Emergency Number :"
+                android:id="@+id/textView3"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/localEmergencyNumber"
+                android:hint="100"
+                android:maxLength="10"
+                android:gravity="left"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Emergency Contact 1 :"
+                android:id="@+id/textView4"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Contact"
+                    android:id="@+id/contactPicker1"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.20"/>
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Not Selected"
+                    android:id="@+id/ContactName1"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="0.40" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Emergency Contact 2 :"
+                android:textColor="@color/black"
+                android:id="@+id/textView2"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Contact"
+                    android:id="@+id/contactPicker2"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.20"/>
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Not Selected"
+                    android:id="@+id/ContactName2"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="0.40" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="SMS content :"
+                android:id="@+id/SMSTV"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/smsBox"
+                android:layout_gravity="center_horizontal"
+                android:text="I Need help urgently. This is an automated message."
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Help word :"
+                android:id="@+id/textView6"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="10dp">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Help Word"
+                    android:id="@+id/setHelpWordButton"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.20"/>
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="help"
+                    android:id="@+id/HelpWordTextView"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="0.40" />
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send SMS on listening to help phrase"
+                android:id="@+id/sendSMScheckBox"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record Audio on listening to help phrase"
+                android:id="@+id/recordAudiocheckBox"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Append Location in SMS"
+                android:id="@+id/locationCheckbox"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Service Status :"
+                android:id="@+id/textView5"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start/Stop"
+                    android:id="@+id/toggleServiceButton"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.20" />
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Stopped"
+                    android:id="@+id/serviceStatus"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="0.40" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/saveButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+</ScrollView>
+
+
